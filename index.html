@@ -7,22 +7,78 @@
     body {
       font-family: sans-serif;
       background-color: #111;
-      color: #f0f;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      color: #fff;
       margin: 0;
+      padding: 2rem;
     }
-    h1 { margin-bottom: 1rem; }
-    a { color: #0ff; text-decoration: none; margin-top: 1rem; }
-    a:hover { color: #f0f; }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #f0f;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .art-piece {
+      background-color: #222;
+      padding: 0.5rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .art-piece:hover {
+      transform: scale(1.05);
+    }
+
+    .art-piece img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .credit {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Art</h1>
-  <p>This is the Art subdomain.</p>
-  <a href="https://sk4lidos.com">Back to home</a>
+  <h1>Art Gallery</h1>
+  <div class="gallery">
+    <div class="art-piece">
+      <img src="art1.jpg" alt="Art 1">
+      <div class="credit">Artist: Name 1</div>
+    </div>
+    <div class="art-piece">
+      <img src="art2.jpg" alt="Art 2">
+      <div class="credit">Artist: Name 2</div>
+    </div>
+    <div class="art-piece">
+      <img src="art3.jpg" alt="Art 3">
+      <div class="credit">Artist: Name 3</div>
+    </div>
+    <!-- Add more art pieces here -->
+  </div>
 </body>
 </html>
