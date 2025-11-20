@@ -48,6 +48,7 @@
       margin-top: 0.5rem;
       font-size: 0.9rem;
       color: #aaa;
+      text-transform: capitalize;
     }
 
     @media (max-width: 900px) {
@@ -61,24 +62,64 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* Return to Home button styling */
+    .home-button {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background-color: #f0f;
+      color: #111;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+      margin-top: 2rem;
+    }
+
+    .home-button:hover {
+      background-color: #0ff;
+      color: #111;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
   <h1>Art Gallery</h1>
   <div class="gallery">
     <div class="art-piece">
-      <img src="art1.jpg" alt="Art 1">
-      <div class="credit">Artist: Name 1</div>
+      <img src="images/arrowknox.jpeg" alt="Arrowknox">
+      <div class="credit">Artist: Arrowknox</div>
     </div>
     <div class="art-piece">
-      <img src="art2.jpg" alt="Art 2">
-      <div class="credit">Artist: Name 2</div>
+      <img src="images/emilymxsac.jpeg" alt="Emilymxsac">
+      <div class="credit">Artist: Emilymxsac</div>
     </div>
     <div class="art-piece">
-      <img src="art3.jpg" alt="Art 3">
-      <div class="credit">Artist: Name 3</div>
+      <img src="images/gayfoxes.jpeg" alt="Gayfoxes">
+      <div class="credit">Artist: Gayfoxes</div>
     </div>
-    <!-- Add more art pieces here -->
+    <div class="art-piece">
+      <img src="images/pastel_beanies.jpeg" alt="Pastel Beanies">
+      <div class="credit">Artist: Pastel Beanies</div>
+    </div>
+    <div class="art-piece">
+      <img src="images/soupertoast.jpeg" alt="Soupertoast">
+      <div class="credit">Artist: Soupertoast</div>
+    </div>
+    <div class="art-piece">
+      <img src="images/squawq7_2.jpeg" alt="Squawq7_2">
+      <div class="credit">Artist: Squawq7_2</div>
+    </div>
   </div>
+
+  <!-- Return to Home Button -->
+  <div class="button-container">
+    <a href="https://sk4lidos.com" class="home-button">Return to Home</a>
+  </div>
+
 </body>
 </html>
