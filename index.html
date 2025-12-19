@@ -2,93 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Art - sk4lidos.com</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #111;
-      color: #fff;
-      margin: 0;
-      padding: 2rem;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-      color: #f0f;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .art-piece {
-      background-color: #222;
-      padding: 0.5rem;
-      border-radius: 8px;
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .art-piece:hover {
-      transform: scale(1.05);
-    }
-
-    .art-piece img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-
-    .credit {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #aaa;
-      text-transform: capitalize;
-    }
-
-    @media (max-width: 900px) {
-      .gallery {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* Return to Home button styling */
-    .home-button {
-      display: inline-block;
-      padding: 0.7rem 1.5rem;
-      background-color: #f0f;
-      color: #111;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.2s;
-      margin-top: 2rem;
-    }
-
-    .home-button:hover {
-      background-color: #0ff;
-      color: #111;
-    }
-
-    .button-container {
-      text-align: center;
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1>Art Gallery</h1>
+
   <div class="gallery">
     <div class="art-piece">
       <img src="images/arrowknox.jpeg" alt="Arrowknox">
@@ -116,10 +36,8 @@
     </div>
   </div>
 
-  <!-- Return to Home Button -->
-  <div class="button-container">
-    <a href="https://sk4lidos.com" class="home-button">Return to Home</a>
+  <div class="home-link">
+    <a href="https://sk4lidos.com">Return to Home</a>
   </div>
-
 </body>
 </html>
